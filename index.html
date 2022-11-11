@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>my work</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormsubmit()">
+                    <div>
+                        <label for="ProductCode">ProductId</label>
+                        <input type="text"  name="ProductCode" id="ProductCode">
+                    
+                    </div>
+                   
+                    <div>
+                        <label for="Product">SelectProduct</label>
+                        <input list="product" name="product">
+                        <datalist id="product">
+                            <option value="Phone">
+                                <option value="Machine">
+                                <option value="Keyboo">
+                                <option value="Mouse">
+                                <option value="DeskTop">
+                        </datalist>
+
+                    </div>
+                    <div>
+                        <label for="Description">Description</label>
+                        <input type="text"  name="datemin" >
+                    
+                    </div>
+                    <div>
+                        <label for="date">Date</label>
+                        <input type="date" id="datemin" name="datemin" min="2000-01-02">
+                    
+                    </div>
+                    <div>
+                        <label for="price">Price</label>
+                        <input type="text"  name="datemin" >
+                    
+                    
+                    </div>
+                    <div>
+                        <label for="category">Category</label>
+                        <input list="category" name="category">
+                        <datalist id="category">
+                            <option value="tephone">
+                                <option value="Machine">
+                                <option value="Keyboo">
+                                <option value="Mouse">
+                                <option value="DeskTop">
+                        </datalist>
+                    
+                    </div>
+                    <div>
+                        <label for="uploadingProduct">UploadingProduct</label>
+                        <input type="file" id="myFile" name="filename">
+                    
+                    </div>
+                    <div>
+                     <input type="submit" value="submit">
+                    </div>
+                </form>
+                <table class="list" id="storeList">
+                    <thead>
+                        <tr>
+                            <th>productCode</th>
+                            <th>Product</th>
+                            <th>Description</th>
+                            <th>Date</th>
+                            <th>category</th>
+                            <!-- <th>UploadingProduct</th> -->
+                           
+                        
+                        </tr>
+                    </thead>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</body>
+<script type="text/javascript" scr="./script.js"></script>
+</html>
